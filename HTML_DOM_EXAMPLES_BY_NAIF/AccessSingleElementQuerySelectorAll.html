@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AccessSingleElementQuerySelectorAll</title>
+</head>
+<body>
+
+
+<!--   <p>  is an Example of  HTML Element-->
+
+<p class="studentInfo"> MY Name is Sara and I am a 10 Years old.</p>
+<p class="studentInfo"> MY Name is Amal and I am a 20 Years old.</p>
+<p class="studentInfo"> MY Name is Reem and I am a 30 Years old.</p>
+
+
+<!--Access  Elements Using querySelectorAll (class or id)  By JS-->
+<script>
+
+
+    /*
+
+     [[ Try All Selectors from this URL :]]
+     https://www.w3schools.com/cssref/css_selectors.asp
+
+     querySelectorAll wil return all Matched Elements for the provided selector
+
+     */
+
+
+    var myElemenstList=document.querySelectorAll('.studentInfo'); //returns a list with 3 paragraph elements
+
+    console.log(myElemenstList);//print the list
+
+    //loop through the list
+    for(var x=0;x<myElemenstList.length;x++){
+
+        alert(myElemenstList[x].innerHTML);//alert the content of the  object (element)
+    }
+
+    /*
+    Try other Examples with different selectors by yourself to learn more please.
+    Thanks :)
+    */
+
+
+</script>
+
+</body>
+</html>

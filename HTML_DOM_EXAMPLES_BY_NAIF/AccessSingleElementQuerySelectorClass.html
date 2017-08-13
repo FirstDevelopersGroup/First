@@ -15,8 +15,19 @@
 <!--Access ((SINGLE)) Element Using querySelector (class)  By JS-->
 <script>
 
-    //    Target theElement :  use SELECTOR like id selector or class selector
-    //Id Selector :  .elementClass
+
+    /*
+
+     [[ Try All Selectors from this URL :]]
+     https://www.w3schools.com/cssref/css_selectors.asp
+
+      Target theElement :  use SELECTOR like id selector or class selector
+      Id Selector :  .elementClassName
+
+     Notice : querySelector will return only ONE ELEMENT ((First match Element))
+     To Return all Matched Elements you have to use querySelectorAll
+
+     */
     var myElement=document.querySelector('.studentInfo');
 
     //Do what U want to the element which is <p>
@@ -34,21 +45,5 @@
 
 </script>
 
-
-<p class="x">class X</p>
-
-<p class="x y">class X and Y</p>
-
-
-
-<script>
-
-    //Try All Selectors from this URL :
-    //https://www.w3schools.com/cssref/css_selectors.asp
-    
-    var myElement=document.querySelectorAll('p , script');
-console.log(myElement);
-
-</script>
 </body>
 </html>
