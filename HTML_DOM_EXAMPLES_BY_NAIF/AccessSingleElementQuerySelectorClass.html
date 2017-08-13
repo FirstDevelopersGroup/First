@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AccessSingleElementQuerySelectorClass</title>
+</head>
+<body>
+
+
+<!--   <p>  is an Example of  HTML Element-->
+
+<p class="studentInfo"> MY Name is Sara and I am a 10 Years old.</p>
+
+
+<!--Access ((SINGLE)) Element Using querySelector (class)  By JS-->
+<script>
+
+    //    Target theElement :  use SELECTOR like id selector or class selector
+    //Id Selector :  .elementClass
+    var myElement=document.querySelector('.studentInfo');
+
+    //Do what U want to the element which is <p>
+
+    //Change the Content inside the element by innerHTML
+    myElement.innerHTML="My Name is Amal and I am 20 Years old.";
+
+    //or U can get The content and store it in a variable
+
+    var elementContent=myElement.innerHTML;
+
+    alert(elementContent);
+
+    //You can process the content in any manner u wish
+
+</script>
+
+
+<p class="x">class X</p>
+
+<p class="x y">class X and Y</p>
+
+
+
+<script>
+
+    //Try All Selectors from this URL :
+    //https://www.w3schools.com/cssref/css_selectors.asp
+    
+    var myElement=document.querySelectorAll('p , script');
+console.log(myElement);
+
+</script>
+</body>
+</html>

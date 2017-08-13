@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Access Single Element : HTML-DOM</title>
+    <title>AccessSingleElementQuerySelectorID</title>
 </head>
 <body>
 
@@ -12,11 +12,12 @@
 <p id="studentInfo"> MY Name is Sara and I am a 10 Years old.</p>
 
 
-<!--Access ((SINGLE)) Element By JS-->
+<!--Access ((SINGLE)) Element Using querySelector (id)  By JS-->
 <script>
 
-//    Target theElement
-    var myElement=document.getElementById('studentInfo');
+    //    Target theElement :  use SELECTOR like id selector or class selector
+    //Id Selector :  #elementID
+    var myElement=document.querySelector('#studentInfo');
 
     //Do what U want to the element which is <p>
 
@@ -32,9 +33,6 @@
     //You can process the content in any manner u wish
 
 </script>
-
-
-
 
 </body>
 </html>
