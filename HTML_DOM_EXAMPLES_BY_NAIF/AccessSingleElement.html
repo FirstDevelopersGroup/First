@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Access Single Element : HTML-DOM</title>
+</head>
+<body>
+
+
+<!--   <p>  is an Example of  HTML Element-->
+
+<p id="studentInfo"> MY Name is Sara and I am a 10 Years old.</p>
+
+
+<!--Access ((SINGLE)) Element By JS-->
+<script>
+
+//    Target theElement
+    var myElement=document.getElementById('studentInfo');
+
+    //Do what U want to the element which is <p>
+
+    //Change the Content inside the element by innerHTML
+    myElement.innerHTML="My Name is Amal and I am 20 Years old."
+
+    //or U can get The content and store it in a variable
+
+    var elementContent=myElement.innerHTML;
+
+    alert(elementContent);
+
+    //You can process the content in any manner u wish
+
+</script>
+
+
+
+
+</body>
+</html>
